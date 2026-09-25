@@ -1,1 +1,0 @@
-Formatting '/home/zen/Desktop/CCNA/GNS3 Labs/SVI IP Addressing + Port Sec/project-files/qemu/70413253-9703-4235-b699-7288678810bd/hda_disk.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=4294967296 backing_file=/home/zen/GNS3/images/QEMU/virtioa.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16

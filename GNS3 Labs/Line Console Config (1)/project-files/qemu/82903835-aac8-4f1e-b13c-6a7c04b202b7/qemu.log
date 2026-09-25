@@ -1,4 +1,0 @@
-Start QEMU with /usr/bin/qemu-system-x86_64 -name Switch-1 -m 1024M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive 'file=/home/zen/Desktop/CCNA/GNS3 Labs/Line Console Config (1)/project-files/qemu/82903835-aac8-4f1e-b13c-6a7c04b202b7/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0' -uuid 82903835-aac8-4f1e-b13c-6a7c04b202b7 -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:40969,server,nowait -net none -device e1000,mac=0c:90:38:35:00:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10001,localaddr=127.0.0.1:10000 -display none
-
-Execution log:
-qemu-system-x86_64: terminating on signal 15 from pid 12445 (/usr/bin/python3)
