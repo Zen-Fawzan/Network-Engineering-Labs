@@ -1,0 +1,1 @@
+Formatting '/home/zen/Desktop/CCNA/GNS3 Labs/Default Route Laboratory (10)/project-files/qemu/4243ec59-df3a-41f8-94ef-fe5e865467e6/hda_disk.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=2147483648 backing_file=/home/zen/GNS3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-2.T.qcow2 backing_fmt=vmdk lazy_refcounts=off refcount_bits=16

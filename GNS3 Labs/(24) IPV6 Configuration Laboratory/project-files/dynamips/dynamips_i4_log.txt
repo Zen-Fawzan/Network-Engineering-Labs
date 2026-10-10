@@ -1,0 +1,47 @@
+2026-10-09T05:56:07.548Z HYPERVISOR: Release 0.2.24-amd64/Linux (tag 2023010200)
+2026-10-09T05:56:07.548Z HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49015.
+2026-10-09T05:56:07.556Z HYPERVISOR: exec_cmd: hypervisor version 
+2026-10-09T05:56:07.557Z HYPERVISOR: exec_cmd: hypervisor working_dir /home/zen/Desktop/CCNA/GNS3 Labs/ (26) IPV6 Configuration Laboratory/project-files/dynamips 
+2026-10-09T05:56:07.557Z GENERAL: working_dir=/home/zen/Desktop/CCNA/GNS3 Labs/ (26) IPV6 Configuration Laboratory/project-files/dynamips
+2026-10-09T05:56:07.557Z HYPERVISOR: exec_cmd: hypervisor working_dir /home/zen/Desktop/CCNA/GNS3 Labs/ (26) IPV6 Configuration Laboratory/project-files/dynamips/fb515f75-65f4-441f-b00c-7c3ba64de9c3 
+2026-10-09T05:56:07.557Z GENERAL: working_dir=/home/zen/Desktop/CCNA/GNS3 Labs/ (26) IPV6 Configuration Laboratory/project-files/dynamips/fb515f75-65f4-441f-b00c-7c3ba64de9c3
+2026-10-09T05:56:07.557Z HYPERVISOR: exec_cmd: vm create R3 3 c3725 
+2026-10-09T05:56:07.557Z VM: VM R3 created.
+2026-10-09T05:56:07.557Z HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5003 
+2026-10-09T05:56:07.557Z HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+2026-10-09T05:56:07.558Z HYPERVISOR: exec_cmd: vm set_ios R3 /home/zen/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+2026-10-09T05:56:07.558Z HYPERVISOR: exec_cmd: vm set_ram R3 1000 
+2026-10-09T05:56:07.558Z HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+2026-10-09T05:56:07.558Z HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+2026-10-09T05:56:07.558Z HYPERVISOR: exec_cmd: vm get_status R3 
+2026-10-09T05:56:07.558Z HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+2026-10-09T05:56:07.558Z HYPERVISOR: exec_cmd: vm get_status R3 
+2026-10-09T05:56:07.558Z HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 NM-4T 
+2026-10-09T05:56:07.558Z HYPERVISOR: exec_cmd: vm get_status R3 
+2026-10-09T05:56:07.558Z HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 16 WIC-2T 
+2026-10-09T05:56:07.559Z HYPERVISOR: exec_cmd: vm get_status R3 
+2026-10-09T05:56:07.559Z HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 32 WIC-2T 
+2026-10-09T05:56:07.559Z HYPERVISOR: exec_cmd: vm get_status R3 
+2026-10-09T05:56:07.559Z HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 48 WIC-2T 
+2026-10-09T05:56:07.597Z HYPERVISOR: exec_cmd: vm set_ios R3 /home/zen/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+2026-10-09T05:56:19.825Z HYPERVISOR: exec_cmd: nio create_udp udp-d18cf4a0-d283-42c9-a1fb-b58a883db267 10010 127.0.0.1 10011 
+2026-10-09T05:56:20.029Z HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 2 0 udp-d18cf4a0-d283-42c9-a1fb-b58a883db267 
+2026-10-09T05:56:20.030Z HYPERVISOR: exec_cmd: vm get_status R3 
+2026-10-09T05:56:46.476Z HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+2026-10-09T05:56:46.477Z HYPERVISOR: exec_cmd: vm set_ghost_file R3 /home/zen/Desktop/CCNA/GNS3 Labs/ (26) IPV6 Configuration Laboratory/project-files/dynamips/c3725-adventerprisek9-mz124-15.image-1000.ghost 
+2026-10-09T05:56:46.477Z HYPERVISOR: exec_cmd: vm get_status R3 
+2026-10-09T05:56:46.478Z HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+2026-10-09T05:56:46.479Z HYPERVISOR: exec_cmd: vm start R3 
+2026-10-09T05:58:57.063Z HYPERVISOR: exec_cmd: vm get_status R3 
+2026-10-09T05:58:57.063Z HYPERVISOR: exec_cmd: vm slot_disable_nio R3 2 0 
+2026-10-09T05:58:57.069Z HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 2 0 
+2026-10-09T05:58:57.070Z HYPERVISOR: exec_cmd: nio delete udp-d18cf4a0-d283-42c9-a1fb-b58a883db267 
+2026-10-09T05:58:57.596Z HYPERVISOR: exec_cmd: vm get_status R3 
+2026-10-09T05:58:57.597Z HYPERVISOR: exec_cmd: vm stop R3 
+2026-10-09T05:58:57.601Z VM: VM R3 shutdown.
+2026-10-09T05:58:57.602Z HYPERVISOR: exec_cmd: vm extract_config R3 
+2026-10-09T05:58:57.604Z HYPERVISOR: exec_cmd: vm delete R3 
+2026-10-09T05:58:57.604Z VM: VM R3 destroyed.
+2026-10-09T05:58:57.605Z HYPERVISOR: exec_cmd: hypervisor stop 
+2026-10-09T05:58:57.724Z HYPERVISOR: Stopped.
+2026-10-09T05:58:57.724Z GENERAL: reset done.

@@ -1,0 +1,4 @@
+Start QEMU with /usr/bin/qemu-system-x86_64 -name Debian-Server-1 -m 1024M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive 'file=/home/zen/Desktop/CCNA/GNS3 Labs/(21) Static NAT Laboratory/project-files/qemu/207bd3f3-64db-4d42-bc42-858b6c36fa68/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0' -uuid 207bd3f3-64db-4d42-bc42-858b6c36fa68 -serial telnet:127.0.0.1:5013,server,nowait -monitor tcp:127.0.0.1:33057,server,nowait -net none -device virtio-net-pci,mac=0c:7b:d3:f3:00:00,speed=10000,duplex=full,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10029,localaddr=127.0.0.1:10028 -device virtio-net-pci,mac=0c:7b:d3:f3:00:01,speed=10000,duplex=full,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:10031,localaddr=127.0.0.1:10030 -display none
+
+Execution log:
+qemu-system-x86_64: terminating on signal 15 from pid 124481 (/usr/bin/python3)

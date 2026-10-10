@@ -1,0 +1,1 @@
+Formatting '/home/zen/Desktop/CCNA/GNS3 Labs/EIGRP Laboratory (14)/project-files/qemu/b3374dc5-b5c7-4447-9311-8dff672f5ada/hda_disk.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=4294967296 backing_file=/home/zen/GNS3/images/QEMU/virtioa.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16

@@ -1,0 +1,54 @@
+2026-10-09T05:56:05.998Z HYPERVISOR: Release 0.2.24-amd64/Linux (tag 2023010200)
+2026-10-09T05:56:05.998Z HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34041.
+2026-10-09T05:56:06.007Z HYPERVISOR: exec_cmd: hypervisor version 
+2026-10-09T05:56:06.007Z HYPERVISOR: exec_cmd: hypervisor working_dir /home/zen/Desktop/CCNA/GNS3 Labs/ (26) IPV6 Configuration Laboratory/project-files/dynamips 
+2026-10-09T05:56:06.007Z GENERAL: working_dir=/home/zen/Desktop/CCNA/GNS3 Labs/ (26) IPV6 Configuration Laboratory/project-files/dynamips
+2026-10-09T05:56:06.008Z HYPERVISOR: exec_cmd: hypervisor working_dir /home/zen/Desktop/CCNA/GNS3 Labs/ (26) IPV6 Configuration Laboratory/project-files/dynamips/5f61d8a8-584e-4843-b958-2027bba15952 
+2026-10-09T05:56:06.008Z GENERAL: working_dir=/home/zen/Desktop/CCNA/GNS3 Labs/ (26) IPV6 Configuration Laboratory/project-files/dynamips/5f61d8a8-584e-4843-b958-2027bba15952
+2026-10-09T05:56:06.008Z HYPERVISOR: exec_cmd: vm create R2 2 c3725 
+2026-10-09T05:56:06.008Z VM: VM R2 created.
+2026-10-09T05:56:06.008Z HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5002 
+2026-10-09T05:56:06.008Z HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+2026-10-09T05:56:06.008Z HYPERVISOR: exec_cmd: vm set_ios R2 /home/zen/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+2026-10-09T05:56:06.008Z HYPERVISOR: exec_cmd: vm set_ram R2 1000 
+2026-10-09T05:56:06.008Z HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+2026-10-09T05:56:06.008Z HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+2026-10-09T05:56:06.008Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-10-09T05:56:06.008Z HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+2026-10-09T05:56:06.009Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-10-09T05:56:06.009Z HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-4T 
+2026-10-09T05:56:06.009Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-10-09T05:56:06.009Z HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-2T 
+2026-10-09T05:56:06.009Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-10-09T05:56:06.009Z HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 32 WIC-2T 
+2026-10-09T05:56:06.009Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-10-09T05:56:06.009Z HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 48 WIC-2T 
+2026-10-09T05:56:06.047Z HYPERVISOR: exec_cmd: vm set_ios R2 /home/zen/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+2026-10-09T05:56:14.115Z HYPERVISOR: exec_cmd: nio create_udp udp-c94383ea-6150-44bf-b11e-a4400e17a787 10004 127.0.0.1 10005 
+2026-10-09T05:56:14.323Z HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 2 0 udp-c94383ea-6150-44bf-b11e-a4400e17a787 
+2026-10-09T05:56:14.324Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-10-09T05:56:19.820Z HYPERVISOR: exec_cmd: nio create_udp udp-e332ddc7-31d6-45a2-995e-4c03182b6da1 10008 127.0.0.1 10009 
+2026-10-09T05:56:19.820Z HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 2 1 udp-e332ddc7-31d6-45a2-995e-4c03182b6da1 
+2026-10-09T05:56:19.821Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-10-09T05:56:46.478Z HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+2026-10-09T05:56:46.479Z HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/zen/Desktop/CCNA/GNS3 Labs/ (26) IPV6 Configuration Laboratory/project-files/dynamips/c3725-adventerprisek9-mz124-15.image-1000.ghost 
+2026-10-09T05:56:46.479Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-10-09T05:56:46.480Z HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+2026-10-09T05:56:46.480Z HYPERVISOR: exec_cmd: vm start R2 
+2026-10-09T05:58:57.044Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-10-09T05:58:57.044Z HYPERVISOR: exec_cmd: vm slot_disable_nio R2 2 1 
+2026-10-09T05:58:57.062Z HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 2 1 
+2026-10-09T05:58:57.062Z HYPERVISOR: exec_cmd: nio delete udp-e332ddc7-31d6-45a2-995e-4c03182b6da1 
+2026-10-09T05:58:57.096Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-10-09T05:58:57.096Z HYPERVISOR: exec_cmd: vm slot_disable_nio R2 2 0 
+2026-10-09T05:58:57.102Z HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 2 0 
+2026-10-09T05:58:57.103Z HYPERVISOR: exec_cmd: nio delete udp-c94383ea-6150-44bf-b11e-a4400e17a787 
+2026-10-09T05:58:57.418Z HYPERVISOR: exec_cmd: vm get_status R2 
+2026-10-09T05:58:57.419Z HYPERVISOR: exec_cmd: vm stop R2 
+2026-10-09T05:58:57.422Z VM: VM R2 shutdown.
+2026-10-09T05:58:57.423Z HYPERVISOR: exec_cmd: vm extract_config R2 
+2026-10-09T05:58:57.425Z HYPERVISOR: exec_cmd: vm delete R2 
+2026-10-09T05:58:57.425Z VM: VM R2 destroyed.
+2026-10-09T05:58:57.426Z HYPERVISOR: exec_cmd: hypervisor stop 
+2026-10-09T05:58:57.677Z HYPERVISOR: Stopped.
+2026-10-09T05:58:57.677Z GENERAL: reset done.
