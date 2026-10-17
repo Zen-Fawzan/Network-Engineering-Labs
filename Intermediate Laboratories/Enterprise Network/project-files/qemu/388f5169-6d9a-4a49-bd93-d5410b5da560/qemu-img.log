@@ -1,0 +1,1 @@
+Formatting '/home/zen/Desktop/Network-Engineer-Labs/Intermediate Laboratories/Enterprise Network/project-files/qemu/388f5169-6d9a-4a49-bd93-d5410b5da560/hda_disk.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=4294967296 backing_file=/home/zen/GNS3/images/QEMU/virtioa.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16
